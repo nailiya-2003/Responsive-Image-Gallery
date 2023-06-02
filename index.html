@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Galery Slider</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/scrollbar.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -58,12 +58,11 @@
                             </div>
                         </article>
                     </div>
-             
             </div>
         </div>
         <div class="gallery__overflow">
-            <div class="swiper-wrapper gallery__thumbs">
-                <div>
+            <div class="swiper gallery__thumbs">
+                <div class="swiper-wrapper">
                     <div class = "swiper-slide">
                         <div class="gallery__thumbnail">
                             <img src="img/Classic Villa.jpg" alt="Villa">
@@ -90,6 +89,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-line"></i>
             </div>
         </div>
     </div>
