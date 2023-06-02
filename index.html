@@ -5,60 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Galery Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/scrollbar.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="gallery">
-        <div class="gallery-cards">
-            <div>
+        <div class="swiper gallery-cards">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                        <article class="gallery--card">
+                            <img src="img/Classic Villa.jpg" alt="Villa" class="gallery--img">
+                            <div class="gallery-data">
+                                <h3 class="gallery_title">Classic Villa</h3>
+                                <span class="gallery-subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="gallery--card">
+                            <img src="img/Living Collection by Savio Firmino _ Media - Photos and Videos - 4 _ Archello.jpg" alt="Villa" class="gallery--img">
+                            <div class="gallery-data">
+                                <h3 class="gallery_title">Classic Villa</h3>
+                                <span class="gallery-subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="gallery--card">
+                            <img src="img/Women Majlis.jpg" alt="Villa" class="gallery--img">
+                            <div class="gallery-data">
+                                <h3 class="gallery_title">Classic Villa</h3>
+                                <span class="gallery-subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div  class = "swiper-slide">
+                        <article class="gallery--card">
+                            <img src="img/chair1.jpg" alt="Villa" class="gallery--img">
+                            <div class="gallery-data">
+                                <h3 class="gallery_title">Classic Villa</h3>
+                                <span class="gallery-subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class = "swiper-slide"> 
+                        <article class="gallery--card">
+                            <img src="img/chair.jpg" alt="Villa" class="gallery--img">
+                            <div class="gallery-data">
+                                <h3 class="gallery_title">Classic Villa</h3>
+                                <span class="gallery-subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+             
+            </div>
+        </div>
+        <div class="gallery__overflow">
+            <div class="swiper-wrapper gallery__thumbs">
                 <div>
-                    <article class="gallery--card">
-                        <img src="img/Classic Villa.jpg" alt="Villa" class="gallery--img">
-                        <div class="gallery-data">
-                            <h3 class="gallery_title">Classic Villa</h3>
-                            <span class="gallery-subtitle">Modern</span>
+                    <div class = "swiper-slide">
+                        <div class="gallery__thumbnail">
+                            <img src="img/Classic Villa.jpg" alt="Villa">
                         </div>
-                    </article>
-                </div>
-                <div>
-                    <article class="gallery--card">
-                        <img src="img/Living Collection by Savio Firmino _ Media - Photos and Videos - 4 _ Archello.jpg" alt="Villa" class="gallery--img">
-                        <div class="gallery-data">
-                            <h3 class="gallery_title">Classic Villa</h3>
-                            <span class="gallery-subtitle">Modern</span>
+                    </div>
+                    <div class = "swiper-slide">
+                        <div class="gallery__thumbnail">
+                            <img src="img/Living Collection by Savio Firmino _ Media - Photos and Videos - 4 _ Archello.jpg" alt="Villa">
                         </div>
-                    </article>
-                </div>
-                <div>
-                    <article class="gallery--card">
-                        <img src="img/Women Majlis.jpg" alt="Villa" class="gallery--img">
-                        <div class="gallery-data">
-                            <h3 class="gallery_title">Classic Villa</h3>
-                            <span class="gallery-subtitle">Modern</span>
+                    </div>
+                    <div class = "swiper-slide">
+                        <div class="gallery__thumbnail">
+                            <img src="img/Women Majlis.jpg" alt="Villa">
                         </div>
-                    </article>
-                </div>
-                <div>
-                    <article class="gallery--card">
-                        <img src="img/chair1.jpg" alt="Villa" class="gallery--img">
-                        <div class="gallery-data">
-                            <h3 class="gallery_title">Classic Villa</h3>
-                            <span class="gallery-subtitle">Modern</span>
+                    </div>
+                    <div class = "swiper-slide">
+                        <div class="gallery__thumbnail">
+                            <img src="img/chair1.jpg" alt="Villa">
                         </div>
-                    </article>
-                </div>
-                <div>
-                    <article class="gallery--card">
-                        <img src="img/chair.jpg" alt="Villa" class="gallery--img">
-                        <div class="gallery-data">
-                            <h3 class="gallery_title">Classic Villa</h3>
-                            <span class="gallery-subtitle">Modern</span>
+                    </div>
+                    <div class = "swiper-slide">
+                        <div class="gallery__thumbnail">
+                            <img src="img/chair.jpg" alt="Villa">
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
